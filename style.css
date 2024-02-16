@@ -1,14 +1,16 @@
  h2{
     text-align: left;
     font-size: 50px; 
+    margin: 5rem;
 }
 body{
     display: flex;
     flex-direction: column;
     align-items: left; 
-    background:url('https://wallpapers.com/images/hd/naruto-s-sage-mode-3jylx0ao9beesbb0.webp') no-repeat;
-    margin-left: 10rem;
-    background-position: center;
+    background:url('https://wallpapers.com/images/hd/naruto-s-sage-mode-3jylx0ao9beesbb0.webp') no-repeat; 
+    margin-left: 10rem; 
+    background-size: max(150rem , 100vw);
+    background-position: top right;
     color: rgba(255, 230, 0, 0.755);
     font-family: "Ninja Naruto V1";
 
@@ -17,14 +19,34 @@ body{
     background: white; 
     background-color: rgba(255, 255, 255, .15);  
     backdrop-filter: blur(5px); 
-    height: 65vh;
-    width: 25vw;
+    margin: 5rem;
+    height: 500px;
+    width: 400px;
     border-radius: 15px;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    top: 8rem; 
+}
+@media screen and (max-width: 1150px) {
+    body{
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px;
+        background-position: top;
+        background-size: 150rem;
+    }
+    h2{
+        margin: 5rem;
+        text-align: center;
+    }
+    .container{
+        margin: 5rem;
+    }
 }
 input{
     margin: 10px;
@@ -32,7 +54,7 @@ input{
     padding: 10px 5px;
     color: rgba(25, 5, 5, 0.725);
     font-size: 30px;
-    width: 18vw;
+    width: 275px;
     background-color: rgba(255, 230, 0, 0.755);
     border-radius: 10px;
     font-family: "Ninja Naruto V1";
